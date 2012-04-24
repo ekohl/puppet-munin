@@ -18,6 +18,7 @@ class munin::client::redhat
 	}
 
 	service { "munin-node":
+		enable => true,
 		ensure => running,
 		hasstatus => true
 	}
